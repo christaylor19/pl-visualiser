@@ -13,6 +13,18 @@
       "destination": "/"
     },
     {
+      "source": "/gram",
+      "destination": "/"
+    },
+    {
+      "source": "/lin",
+      "destination": "/"
+    },
+    {
+      "source": "/fbk",
+      "destination": "/"
+    },
+    {
       "source": "/rdt-subs",
       "destination": "/"
     },
