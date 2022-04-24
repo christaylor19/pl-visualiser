@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^1.0.0",
-    "@supabase/supabase-js": "^1.29.1",
+    "@supabase/supabase-js": "^1.35.2",
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
