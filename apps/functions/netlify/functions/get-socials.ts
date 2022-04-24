@@ -27,7 +27,7 @@ const handler: Handler = async (event, context) => {
   }
 
   try {
-    const data = getSocials(social as Social);
+    const data = await getSocials(social as Social);
     console.log('Data: ', data);
     return {
       statusCode: 200,
