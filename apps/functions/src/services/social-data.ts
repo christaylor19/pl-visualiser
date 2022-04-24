@@ -46,7 +46,6 @@ export const updateAllSocialData = async (
 
 export const getSocials = async (social: Social) => {
   console.log('getSocials(): ', social);
-  console.log('SOCIAL_DATA: ', SOCIAL_DATA);
   const supabase = getClient();
 
   const { data, error } = await supabase
@@ -63,10 +62,12 @@ export const getSocials = async (social: Social) => {
 
 export const getSocial = async (clubId: string, social: Social) => {
   console.log('getSocial(): ', clubId, social);
-  console.log('SOCIAL_DATA: ', SOCIAL_DATA);
   const supabase = getClient();
 
-  const { data, error } = await supabase.from(SOCIAL_DATA).select(`*`);
+  const { data, error } = await supabase
+    .from(SOCIAL_DATA)
+    .select(`club_id,${social}`)
+    .match({ club_id: clubId });
 
   if (error) {
     throw new Error(error.message);
