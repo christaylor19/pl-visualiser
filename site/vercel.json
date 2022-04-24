@@ -1,0 +1,56 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/"
+    },
+    {
+      "source": "/followers",
+      "destination": "/"
+    },
+    {
+      "source": "/subs",
+      "destination": "/"
+    },
+    {
+      "source": "/rdt-subs",
+      "destination": "/"
+    },
+    {
+      "source": "/comparison",
+      "destination": "/"
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://api.twitter.com/2/users/by"
+    },
+    {
+      "source": "/reddit",
+      "destination": "https://www.reddit.com/"
+    },
+    {
+      "source": "/youtube",
+      "destination": "https://www.googleapis.com/youtube/v3/channels"
+    },
+    {
+      "source": "/social",
+      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-social"
+    },
+    {
+      "source": "/socials",
+      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-socials"
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-instagram"
+    },
+    {
+      "source": "/facebook",
+      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-facebook"
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-linkedin"
+    }
+  ]
+}

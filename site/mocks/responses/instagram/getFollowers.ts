@@ -1,0 +1,26 @@
+export const getInstaFollowersMock = {
+  error: null,
+  data: [
+    { club_id: 20, instagram: 528000 },
+    { club_id: 19, instagram: 1919200 },
+    { club_id: 18, instagram: 26300 },
+    { club_id: 17, instagram: 8775100 },
+    { club_id: 16, instagram: 1693800 },
+    { club_id: 15, instagram: 4690900 },
+    { club_id: 14, instagram: 2718800 },
+    { club_id: 13, instagram: 3334200 },
+    { club_id: 12, instagram: 5001400 },
+    { club_id: 11, instagram: 9909100 },
+    { club_id: 10, instagram: 5257600 },
+    { club_id: 9, instagram: 1116500 },
+    { club_id: 8, instagram: 8031100 },
+    { club_id: 7, instagram: 1737500 },
+    { club_id: 6, instagram: 2681600 },
+    { club_id: 5, instagram: 9682200 },
+    { club_id: 4, instagram: 3467600 },
+    { club_id: 3, instagram: 5234900 },
+    { club_id: 2, instagram: 782300 },
+    { club_id: 1, instagram: 4382200 },
+  ],
+};
+

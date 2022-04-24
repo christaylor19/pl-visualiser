@@ -1,0 +1,26 @@
+export const getLinkedInFollowersMock = {
+  error: null,
+  data: [
+    { club_id: 20, linkedin: 7790500 },
+    { club_id: 19, linkedin: 6417600 },
+    { club_id: 18, linkedin: 3356300 },
+    { club_id: 17, linkedin: 644400 },
+    { club_id: 16, linkedin: 5509200 },
+    { club_id: 15, linkedin: 1379400 },
+    { club_id: 14, linkedin: 124700 },
+    { club_id: 13, linkedin: 1770700 },
+    { club_id: 12, linkedin: 9682000 },
+    { club_id: 11, linkedin: 7790200 },
+    { club_id: 10, linkedin: 8867400 },
+    { club_id: 9, linkedin: 4237400 },
+    { club_id: 8, linkedin: 677900 },
+    { club_id: 7, linkedin: 2936000 },
+    { club_id: 6, linkedin: 3733700 },
+    { club_id: 5, linkedin: 7028900 },
+    { club_id: 4, linkedin: 2180800 },
+    { club_id: 3, linkedin: 1870400 },
+    { club_id: 2, linkedin: 6974300 },
+    { club_id: 1, linkedin: 4766600 },
+  ],
+};
+
