@@ -4,8 +4,8 @@ import { FC } from 'react';
 import { Group } from '@visx/group';
 import { Text } from '@visx/text';
 
-import ClubImageSvg from '../../../components/clubLogoSvg';
-import { ClubMetadata } from '../../../types/config';
+import ClubImageSvg from '../../components/clubLogoSvg';
+import { ClubMetadata } from '../../types/config';
 import TreemapSquare from './treemapSquare';
 
 export interface Props {
