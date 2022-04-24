@@ -66,16 +66,17 @@ export const getSocial = async (clubId: string, social: Social) => {
   console.log('SOCIAL_DATA: ', SOCIAL_DATA);
   const supabase = getClient();
 
-  const { data, error } = await supabase
+  const x = await supabase
     .from(SOCIAL_DATA)
     .select(`club_id,${social}`)
     .match({ club_id: clubId });
+  console.log('x: ', x);
 
-  if (error) {
-    throw new Error(error.message);
+  if (x.error) {
+    throw new Error(x.error.message);
   }
 
-  return data;
+  return x.data;
 };
 
 export const getAllSocials = async () => {
