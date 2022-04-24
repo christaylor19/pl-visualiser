@@ -69,7 +69,7 @@ export const getSocial = async (clubId: string, social: Social) => {
   const x = await supabase
     .from(SOCIAL_DATA)
     .select(`club_id,${social}`)
-    .match({ club_id: clubId });
+    .eq('club_id', clubId);
   console.log('x: ', x);
 
   if (x.error) {
