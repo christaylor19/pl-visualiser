@@ -45,6 +45,7 @@ export const updateAllSocialData = async (
 };
 
 export const getSocials = async (social: Social) => {
+  console.log('getSocials(): ', social);
   const supabase = getClient();
 
   const { data, error } = await supabase
@@ -60,6 +61,7 @@ export const getSocials = async (social: Social) => {
 };
 
 export const getSocial = async (clubId: string, social: Social) => {
+  console.log('getSocial(): ', clubId, social);
   const supabase = getClient();
 
   const { data, error } = await supabase

@@ -3,6 +3,7 @@ import * as dotenv from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 
 export const getClient = () => {
+  console.log(process.env);
   const { DATABASE_URL, SUPABASE_SERVICE_API_KEY } = process.env;
   dotenv.config();
 
