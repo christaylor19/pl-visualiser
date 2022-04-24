@@ -16,7 +16,7 @@ const useGetLinkedInFollowers = (): UseGetSubscribers => {
   const {
     status,
     data: { data },
-  } = useFetch("/socials?social=linked_in", options);
+  } = useFetch("https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials?social=linked_in", options);
 
   return { status, data };
 };
