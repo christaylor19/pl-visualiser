@@ -29,14 +29,14 @@ export default ({ mode }) => {
         },
         '/socials': {
           target:
-            'https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials',
+            'https://pl-visualisation-functions.netlify.app/.netlify/functions/get-socials',
           changeOrigin: true,
           secure: false,
           rewrite: (path) => path.replace(/^\/socials/, ''),
         },
         '/social': {
           target:
-            'https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-social',
+            'https://pl-visualisation-functions.netlify.app/.netlify/functions/get-social',
           changeOrigin: true,
           secure: false,
           rewrite: (path) => path.replace(/^\/social/, ''),

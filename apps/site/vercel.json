@@ -46,11 +46,11 @@
     },
     {
       "source": "/social",
-      "destination": "https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-social"
+      "destination": "https://pl-visualisation-functions.netlify.app/.netlify/functions/get-social"
     },
     {
       "source": "/socials",
-      "destination": "https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials"
+      "destination": "https://pl-visualisation-functions.netlify.app/.netlify/functions/get-socials"
     }
   ]
 }

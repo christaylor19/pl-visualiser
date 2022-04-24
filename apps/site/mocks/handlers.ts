@@ -34,8 +34,7 @@ export const handlers = [
       );
     }
   ),
-  rest.get('/https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials', (req, res, ctx) => {
-
+  rest.get('socials', (req, res, ctx) => {
     const social = req.url.searchParams.get('social')
     switch (social) {
       case 'instagram':
