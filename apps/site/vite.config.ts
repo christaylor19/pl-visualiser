@@ -27,26 +27,19 @@ export default ({ mode }) => {
           secure: false,
           rewrite: (path) => path.replace(/^\/twitter/, ''),
         },
-        '/linkedin': {
+        '/socials': {
           target:
-            'https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-linkedin',
+            'https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials',
           changeOrigin: true,
           secure: false,
-          rewrite: (path) => path.replace(/^\/linkedin/, ''),
+          rewrite: (path) => path.replace(/^\/socials/, ''),
         },
-        '/facebook': {
+        '/social': {
           target:
-            'https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-facebook',
+            'https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-social',
           changeOrigin: true,
           secure: false,
-          rewrite: (path) => path.replace(/^\/facebook/, ''),
-        },
-        '/instagram': {
-          target:
-            'https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-instagram',
-          changeOrigin: true,
-          secure: false,
-          rewrite: (path) => path.replace(/^\/instagram/, ''),
+          rewrite: (path) => path.replace(/^\/social/, ''),
         },
         '/reddit': {
           target: 'https://www.reddit.com/',

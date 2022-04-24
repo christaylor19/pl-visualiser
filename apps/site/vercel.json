@@ -34,23 +34,11 @@
     },
     {
       "source": "/social",
-      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-social"
+      "destination": "https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-social"
     },
     {
       "source": "/socials",
-      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-socials"
-    },
-    {
-      "source": "/instagram",
-      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-instagram"
-    },
-    {
-      "source": "/facebook",
-      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-facebook"
-    },
-    {
-      "source": "/linkedin",
-      "destination": "https://dazzling-benz-scraper.netlify.app/.netlify/functions/get-linkedin"
+      "destination": "https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials"
     }
   ]
 }
