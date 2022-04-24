@@ -1,3 +1,5 @@
+import log, { Colour } from 'logger';
+
 import { Handler, schedule } from '@netlify/functions';
 
 import { getClubIds } from '../../src/services/clubs';
@@ -7,6 +9,7 @@ import { updateAllSocialData } from '../../src/services/social-data';
 const handler: Handler = async (event, context) => {
   try {
     const data = await getClubIds();
+    log(`Club IDs: ${JSON.stringify(data)}`, Colour.Green);
 
     const items = [];
 
@@ -26,6 +29,7 @@ const handler: Handler = async (event, context) => {
       body: JSON.stringify({ data: items, error: false }),
     };
   } catch (error) {
+    log(error, Colour.Error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: error.message }),

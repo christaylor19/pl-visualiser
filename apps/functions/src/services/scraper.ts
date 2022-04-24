@@ -1,3 +1,5 @@
+import log, { Colour } from 'logger';
+
 import { scrapeHTML } from '../utils/scrape';
 import { getClub } from './clubs';
 
@@ -17,6 +19,8 @@ const scrapeLinkedIn = async (clubId: number): Promise<number> => {
 };
 
 const scrapeInstagram = async (clubId: number): Promise<number> => {
+  log(clubId.toString(), Colour.Blue);
+
   const club = await getClub(clubId);
 
   if (!club.instagram_id) {
@@ -26,7 +30,7 @@ const scrapeInstagram = async (clubId: number): Promise<number> => {
   const scraped = await scrapeHTML(
     `https://www.instagram.com/${club.instagram_id}/`
   );
-  console.log('scrapeInstagram - scraped: ', scraped);
+
   return scraped;
 };
 

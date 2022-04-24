@@ -1,3 +1,5 @@
+import log, { Colour } from 'logger';
+
 import { SOCIAL_DATA } from '../config/tables';
 import { Social } from './scraper';
 import { getClient } from './supabase';
@@ -17,7 +19,7 @@ export const updateSocialData = async (
     throw new Error(error.message);
   }
 
-  console.log('Updated Social Data: ', data);
+  log(JSON.stringify(data), Colour.Green);
   return data;
 };
 
@@ -25,6 +27,9 @@ export const updateAllSocialData = async (
   clubId: string,
   values: Record<Social, number>
 ) => {
+  log(clubId, Colour.Blue);
+  log(JSON.stringify(values), Colour.Blue);
+
   const supabase = getClient();
 
   const { data, error } = await supabase
@@ -40,7 +45,7 @@ export const updateAllSocialData = async (
     throw new Error(error.message);
   }
 
-  console.log('Updated Socials Data: ', data);
+  log(JSON.stringify(data), Colour.Green);
   return data;
 };
 
@@ -56,12 +61,11 @@ export const getSocials = async (social: Social) => {
     throw new Error(error.message);
   }
 
-  console.log('Socials Data: ', data);
+  log(JSON.stringify(data), Colour.Green);
   return data;
 };
 
 export const getSocial = async (clubId: string, social: Social) => {
-  console.log('getSocial(): ', clubId, social);
   const supabase = getClient();
 
   const { data, error } = await supabase
@@ -73,6 +77,7 @@ export const getSocial = async (clubId: string, social: Social) => {
     throw new Error(error.message);
   }
 
+  log(JSON.stringify(data), Colour.Green);
   return data;
 };
 
@@ -83,6 +88,6 @@ export const getAllSocials = async () => {
     throw new Error(error.message);
   }
 
-  console.log('All Socials Data: ', data);
+  log(JSON.stringify(data), Colour.Green);
   return data;
 };
