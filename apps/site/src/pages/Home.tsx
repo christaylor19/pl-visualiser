@@ -1,3 +1,4 @@
+import { log } from 'logger';
 import { FC, useContext } from 'react';
 import styled from 'styled-components';
 
@@ -32,6 +33,8 @@ const Row = styled.div`
 
 const Home: FC = () => {
   const { mode } = useContext(ModeContext);
+
+  log(mode)
 
   return (
     <Layout>
