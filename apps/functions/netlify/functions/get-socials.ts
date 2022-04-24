@@ -6,8 +6,6 @@ import { getSocials } from '../../src/services/social-data';
 const handler: Handler = async (event, context) => {
   const { social } = event.queryStringParameters;
 
-  console.log('Social: ', social);
-
   if (!social) {
     return {
       statusCode: 400,

@@ -1,8 +1,9 @@
+import log, { Colour } from 'logger';
 import { FC, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
-import { metadata, twitterHandles } from '@/config/clubs/premier-league';
+import { metadata } from '@/config/clubs/premier-league';
 import useGetByUsername from '@/hooks/twitter/useGetByUsername';
 import { ClubData } from '@/types/clubs';
 import { mapFromTwitterData } from '@/utils/mapData';
@@ -29,6 +30,7 @@ const TwitterFollowers: FC = () => {
 
   useEffect(() => {
     if (status === 'fetched') {
+      log('Successfully fetched data!', Colour.Green);
       const mappedData = mapFromTwitterData(data);
       setChartData(mappedData);
     }

@@ -1,10 +1,11 @@
+import log, { Colour } from 'logger';
 import { FC, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import Layout from '@/components/layout';
 import useGetLinkedInFollowers from '@/hooks/linkedin/useGetFollowers';
 import { ClubData } from '@/types/clubs';
-import { mapFromScrapedData, mapFromTwitterData } from '@/utils/mapData';
+import { mapFromScrapedData } from '@/utils/mapData';
 
 import VisxTreemap from '../charts/visx/treemap';
 
@@ -26,6 +27,7 @@ const LinkedIn: FC = () => {
 
   useEffect(() => {
     if (status === 'fetched') {
+      log('Successfully fetched data!', Colour.Green);
       const mappedData = mapFromScrapedData(data, 'linkedin');
       setChartData(mappedData);
     }

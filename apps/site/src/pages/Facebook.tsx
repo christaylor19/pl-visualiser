@@ -1,3 +1,4 @@
+import log, { Colour } from 'logger';
 import { FC, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
@@ -26,6 +27,7 @@ const Facebook: FC = () => {
 
   useEffect(() => {
     if (status === 'fetched') {
+      log('Successfully fetched data!', Colour.Green);
       const mappedData = mapFromScrapedData(data, 'facebook');
 
       setChartData(mappedData);
