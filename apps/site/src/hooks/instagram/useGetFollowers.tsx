@@ -16,7 +16,7 @@ const useGetInstaFollowers = (): UseGetSubscribers => {
   const {
     status,
     data: { data },
-  } = useFetch('https://benevolent-paletas-1b1245.netlify.app/.netlify/functions/get-socials?social=instagram', options);
+  } = useFetch('/socials?social=instagram', options);
 
   return { status, data };
 };
