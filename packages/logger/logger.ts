@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import * as clc from 'cli-color';
 
 export enum Colour {
   Default = 'black',
@@ -10,7 +10,7 @@ export enum Colour {
 }
 
 const log = (message: string, colour?: Colour) => {
-  console.log(chalk[colour || Colour.Default](message));
+  console.log(clc[colour || Colour.Default](message));
 };
 
 export default log;

@@ -27,8 +27,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "6.3.0",
     "styled-components": "^5.3.5",
-    "ts-node": "^10.7.0",
-    "ui": "*"
+    "ts-node": "^10.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -45,6 +44,7 @@
     "typescript": "^4.6.3",
     "vite": "^2.9.1",
     "logger": "*",
+    "ui": "*",
     "types": "*"
   },
   "peerDependencies": {

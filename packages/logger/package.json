@@ -5,9 +5,10 @@
   "types": "./index.ts",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.0.1"
+    "cli-color": "^2.0.2"
   },
   "devDependencies": {
+    "@types/cli-color": "^2.0.2",
     "typescript": "^4.6.4"
   }
 }
