@@ -1,2 +1,4 @@
-import * as React from "react";
-export * from "./Button";
+import * as React from 'react';
+
+export { getTheme, themeConfig } from './theme';
+export * from './Button';

@@ -6,8 +6,7 @@ export enum Colour {
   Blue = 'blue',
   Yellow = 'yellow',
   Green = 'green',
-  Orange = 'orange',
-  Purple = 'magenta',
+  Cyan = 'cyan',
 }
 
 const log = (message: string, colour?: Colour) => {

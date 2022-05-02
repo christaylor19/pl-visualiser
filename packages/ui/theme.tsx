@@ -1,6 +1,5 @@
 import { DefaultTheme } from 'styled-components';
-
-import { Mode } from '../contexts/appContext';
+import { Mode } from 'types';
 
 export const themeConfig: Record<Mode, DefaultTheme> = {
   dark: {
@@ -19,6 +18,5 @@ export const themeConfig: Record<Mode, DefaultTheme> = {
   },
 };
 
-const getTheme = (mode: Mode): DefaultTheme => themeConfig[mode];
+export const getTheme = (mode: Mode): DefaultTheme => themeConfig[mode];
 
-export default getTheme;

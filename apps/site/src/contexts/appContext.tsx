@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useState } from 'react';
-
-export type Mode = 'dark' | 'light';
+import { Mode } from 'types';
 
 type ContextProps = {
   mode: Mode;

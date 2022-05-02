@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { getTheme } from 'ui';
 
 import ModeContextProvider from '../src/contexts/appContext';
-import getTheme from '../src/styles/theme';
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const StoryProvider: FC<Props> = ({ children }) => {

@@ -3,6 +3,7 @@ import './App.css';
 import { FC, useContext, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
+import { themeConfig } from 'ui';
 
 import { ModeContext } from './contexts/appContext';
 import Facebook from './pages/Facebook';
@@ -13,7 +14,6 @@ import RedditSubs from './pages/RedditSubs';
 import SocialMedia from './pages/SocialMedia';
 import TwitterFollowers from './pages/TwitterFollowers';
 import YoutubeSubs from './pages/YoutubeSubs';
-import { themeConfig } from './styles/theme';
 
 const App: FC = () => {
   const { mode } = useContext(ModeContext);
